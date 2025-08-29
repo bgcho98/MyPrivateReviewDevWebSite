@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Private Review - 개발자 홈페이지</title>
+    <style>
+        body {
+            font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+            line-height: 1.6;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .app-icon {
+            width: 120px;
+            height: 120px;
+            background: linear-gradient(45deg, #007AFF, #5856D6);
+            border-radius: 25px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 48px;
+            font-weight: bold;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        .subtitle {
+            color: #666;
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+        .app-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        .info-card {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #007AFF;
+        }
+        .info-card h3 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+        .feature-list li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+        }
+        .feature-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #007AFF;
+            font-weight: bold;
+        }
+        .download-section {
+            text-align: center;
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .download-btn {
+            display: inline-block;
+            background: #007AFF;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            margin: 10px;
+            transition: background 0.3s;
+        }
+        .download-btn:hover {
+            background: #0056CC;
+        }
+        .links {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .links a {
+            color: #007AFF;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="app-icon">MPR</div>
+            <h1>My Private Review</h1>
+            <p class="subtitle">나만의 사적인 리뷰 관리 앱</p>
+        </div>
+
+        <div class="download-section">
+            <h2>📱 앱 다운로드</h2>
+            <p>개인적인 구매 경험을 안전하게 기록하고 관리하세요</p>
+            <a href="#" class="download-btn">Google Play에서 다운로드</a>
+        </div>
+
+        <div class="app-info">
+            <div class="info-card">
+                <h3>🔒 완전한 프라이버시</h3>
+                <ul class="feature-list">
+                    <li>모든 데이터는 기기에만 저장</li>
+                    <li>서버 전송 없음</li>
+                    <li>개인정보 수집 안함</li>
+                    <li>완전 오프라인 동작</li>
+                </ul>
+            </div>
+
+            <div class="info-card">
+                <h3>✨ 주요 기능</h3>
+                <ul class="feature-list">
+                    <li>상점별 제품 리뷰 관리</li>
+                    <li>별점 및 상세 평가</li>
+                    <li>사진 첨부 가능</li>
+                    <li>검색 및 필터링</li>
+                    <li>데이터 백업/복원</li>
+                </ul>
+            </div>
+
+            <div class="info-card">
+                <h3>🎯 이런 분께 추천</h3>
+                <ul class="feature-list">
+                    <li>온라인 쇼핑을 자주 하시는 분</li>
+                    <li>구매 경험을 기록하고 싶은 분</li>
+                    <li>개인정보 보호를 중요시하는 분</li>
+                    <li>간단한 리뷰 관리 도구가 필요한 분</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="links">
+            <a href="privacy_policy.html">개인정보처리방침</a>
+            <a href="mailto:your-email@example.com">문의하기</a>
+        </div>
+
+        <div class="footer">
+            <p><strong>My Private Review</strong></p>
+            <p>개인 구매 경험의 안전한 기록을 위한 앱</p>
+            <p>© 2024 My Private Review. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
